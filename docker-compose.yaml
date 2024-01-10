@@ -1,0 +1,8 @@
+services:
+  main:
+    image: openjdk:23-slim
+    tty: true
+    volumes:
+      - type: bind 
+        source: ./workspace
+        target: /opt/workspace
